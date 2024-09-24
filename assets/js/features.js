@@ -6,7 +6,6 @@ function getInputValueById(id){
 function getInnerTextById(id){
 
     return parseFloat(document.getElementById(id).innerText);
-
 }
 function inputFieldValidation(input){
 
@@ -20,9 +19,7 @@ function inputFieldValidation(input){
 
     return parseFloat(input);
 }
-
-
 function showAlert(){
     alert('Invalid Donation Amount');
 }
-// updated
+// --------------------------------------DONE--------------------------------------

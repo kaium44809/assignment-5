@@ -3,7 +3,7 @@ console.log('connected feni.js');
 
 document.getElementById('feniDonationButton').addEventListener('click', function (event) {
   event.preventDefault();
-  // alert("clicked");
+
   let input;
   input = getInputValueById('feniDonationAmount');
   let x = inputFieldValidation(input);
@@ -16,7 +16,6 @@ document.getElementById('feniDonationButton').addEventListener('click', function
     showAlert();
   }
   else {
-    // Okay....
     document.getElementById('my_modal').showModal();
     document.getElementById('feniDonationAmount').value = '';
     
@@ -30,14 +29,10 @@ document.getElementById('feniDonationButton').addEventListener('click', function
     
     let updatedBalance = currentBalance + newDonationAmount;
   
-    // Update the Feni Donation balance
+    // Feni Donation balance
     document.getElementById('feniDonationBalance').innerText = parseFloat(updatedBalance.toFixed(2));
 
-
-
-
-  
-    // Updating AccountBalance
+    // AccountBalance
     let accountBalance = parseFloat(document.getElementById('acoountBalance').innerText);
     
     accountBalance -= newDonationAmount;
@@ -46,7 +41,7 @@ document.getElementById('feniDonationButton').addEventListener('click', function
     let historyContainer = document.getElementById('historyContainer');
     historyContainer.classList.add('space-y-4');
     let newDiv = document.createElement('div');
-    // border border-[rgba(17, 17, 17, 0.1)] rounded-2xl p-8
+
     newDiv.classList.add('border', 'border-[#1111111a]', 'rounded-2xl', 'p-8');
     let h3 = document.createElement('h3');
     h3.classList.add('text-md', 'font-bold');
@@ -62,10 +57,7 @@ document.getElementById('feniDonationButton').addEventListener('click', function
 
     historyContainer.append(newDiv);
     console.log(historyContainer);
-
-
   }
-
 })
 
-// updated
+// -----------------------------------------DONE----------------------------------------------

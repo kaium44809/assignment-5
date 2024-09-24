@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh</title>
 
-    <!-- FontAweSome CDN -->
+    <!-----------------------------------FontAweSome CDN------------------------------------->
     <script src="https://kit.fontawesome.com/b5a83736f2.js"
       crossorigin="anonymous"></script>
 
-    <!-- DaisyUI Configuration -->
+    <!---------------------------------DaisyUI Configuration---------------------------------->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet" type="text/css" />
@@ -44,17 +44,15 @@
             }
             </script>
 
-    <!-- Google Font Configuration -->
+    <!-----------------------------Google Font Configuration--------------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
       rel="stylesheet">
-
   </head>
   <body class="font-lexend">
     <nav class="sticky top-0 z-20 bg-header ">
-
       <header
         class="md:w-11/12 md:mx-auto px-2 flex justify-between  items-center pt-4 lg:pb-9 pb-6">
         <a href="index.html"
@@ -62,10 +60,10 @@
 
         <div class="ml-4 flex items-center gap-1 lg:gap-3">
 
-          <img class="w-[30px]" src="assets/logo.png" alt="logo">
+          <img class="w-[30px]" src="./logo.png" alt="logo">
           <h3 class="md:text-xl font-semibold">Donate Bangladesh</h3>
         </div>
-        <!-- Total Balance -->
+        <!--------------------------------Total Balance-------------------------------------->
         <div
           class="flex items-center gap-1 md:gap-2 md:text-xl font-medium">
           <img src="assets/coin.png" alt>
@@ -78,43 +76,32 @@
         <div class="ml-2 md:hidden  relative">
           <div id="menuIcon" role="button"
             class="btn btn-ghost  border-1  border-gray-300 rounded-[50%] lg:hidden lg:bg-primary text-lg">
-
             <i class="fa-solid fa-bars " id="bar"></i>
-
             <i class="fa-solid fa-x hidden" id="cross"> </i>
-
           </div>
 
           <ul id="menuDropdown"
             class="hidden  absolute right-0 bg-white rounded-box z-[1] mt-10">
-            <!-- mt-6 w-30 p-4 space-y-3 shadow text-base sm:flex sm: flex-col gap-5 -->
+            <!-----mt-6 w-30 p-4 space-y-3 shadow text-base sm:flex sm: flex-col gap-5------>
             <li
               class>
-              <!-- transition-colors ease-in-out duration-300 -->
+              <!-----------------transition-colors ease-in-out duration-300------------------>
               <a href="index.html"
                 class=" border border-[rgba(17, 17, 17, 0.3)] rounded-lg px-6 py-3 bg-primary">Home</a>
             </li>
           </ul>
-
         </div>
 
         <script>
-              document.getElementById('bar').addEventListener('click', function (){
-                 
+                 document.getElementById('bar').addEventListener('click', function (){
                  document.getElementById('bar').classList.add('hidden');
                  document.getElementById('cross').classList.remove('hidden');
-                 
                  document.getElementById('menuDropdown').classList.remove('hidden');
               })
-
-              document.getElementById('cross').addEventListener('click', function (){
-                 
+                 document.getElementById('cross').addEventListener('click', function (){
                  document.getElementById('cross').classList.add('hidden');
                  document.getElementById('bar').classList.remove('hidden');
-                 
                  document.getElementById('menuDropdown').classList.add('hidden');
-
-
               })
          </script>
       </header>
@@ -128,7 +115,6 @@
             </h3>
             <i class="fa-solid fa-comment-medical"></i>
           </div>
-
         </section>
       </menu>
 
@@ -182,6 +168,6 @@
     </main>
   </body>
 </html>
-
+<!------------------------------------------DONE---------------------------------------------->
 
 
